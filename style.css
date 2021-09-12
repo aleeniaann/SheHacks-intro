@@ -1,0 +1,18 @@
+/* hi */
+body
+{
+    background-color: rgb(245, 243, 240);
+}
+/* p {
+    color:crimson;
+}
+element selector, class selector, id selector(#)
+*/
+
+.title {
+    color:midnightblue;
+}
+
+.sub {
+    color:orangered;
+}
