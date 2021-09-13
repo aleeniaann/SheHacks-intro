@@ -1,72 +1,89 @@
-/* hi 
-body
-{
-    background-color: rgb(245, 240, 240);
-}
-/* p {
-    color:crimson;
-}
-element selector, class selector, id selector(#)
-
-
-.title {
-   
-    text-align: center;
-    color:midnightblue;
-    
+body {
+    background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706);
+    background-size: 600% 400%;
+    animation: gradient 16s linear infinite;
+    animation-direction: alternate;
 }
 
-.sub {
-    color:orangered;
+@keyframes gradient {
+    0% {background-position: 0%}
+    100% {background-position: 100%}
 }
-*/
 
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
 
+.row {margin: 0 -5px;}
 
-/*body
-{
-    /*background-color: #f2874e;*/
-    
-    /*background-blend-mode:soft-light;*/
-
-  /*  opacity: 100;
-}*/
-
-.main {
-    background-image:url("blue.jpg");
-    height: 100%;
-    width: 100%;
-}
-/*p {
-    background-image:url("bg.jpg") ;
-}*/
-
-/*element selector, class selector, id selector(#)
-*/
-.header {
-    border: 5px outset rgb(61, 20, 241);
-    background-color: rgb(61, 191, 235);    
-    text-align: center;
-    text-shadow: white;
-    font-style:inherit ;
-    font-display:initial;
-    font-weight: 700;
-    font: optional;
-    font-variant: small-caps;
-}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
 .pref {
+    color: #A6ACAF;
+    text-shadow: 1px 1px 2px black, 0 0 25px #A6ACAF, 0 0 5px black;
     font-style:inherit;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bold;
 }
+
 .title {
-   
+    font-size: 50px;
+    font-weight:bold;
+    color: white;
+    text-shadow: 1px 1px 2px white, 0 0 25px grey, 0 0 5px white;
     text-align: center;
     /*color:midnightblue;*/
   
 }
     
-
-.sub1 {
-    color:white;
+.container{
+    align-items:center;
+    text-align: center;
+    padding: 50px;
 }
+
+.content {
+    padding: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 80px;
+}
+
+.profile {
+    display: flex;
+    margin-top: 50px;
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    flex-direction: column;
+  }
+
+  .profile-pic{
+    width: 300px;
+    height: 300px;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .profile:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .profile-content {
+    padding: 2px 16px;
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
