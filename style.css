@@ -1,4 +1,4 @@
-/* hi */
+/* hi 
 body
 {
     background-color: rgb(245, 240, 240);
@@ -7,12 +7,63 @@ body
     color:crimson;
 }
 element selector, class selector, id selector(#)
-*/
+
 
 .title {
+   
+    text-align: center;
     color:midnightblue;
+    
 }
 
 .sub {
     color:orangered;
+}
+*/
+/*body
+{
+    /*background-color: #f2874e;*/
+    
+    /*background-blend-mode:soft-light;*/
+
+  /*  opacity: 100;
+}*/
+
+.main {
+    background-image:url("blue.jpg");
+    height: 100%;
+    width: 100%;
+}
+/*p {
+    background-image:url("bg.jpg") ;
+}*/
+
+/*element selector, class selector, id selector(#)
+*/
+.header {
+    border: 5px outset rgb(61, 20, 241);
+    background-color: rgb(61, 191, 235);    
+    text-align: center;
+    text-shadow: white;
+    font-style:inherit ;
+    font-display:initial;
+    font-weight: 700;
+    font: optional;
+    font-variant: small-caps;
+}
+
+.pref {
+    font-style:inherit;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.title {
+   
+    text-align: center;
+    /*color:midnightblue;*/
+  
+}
+    
+
+.sub1 {
+    color:white;
 }
